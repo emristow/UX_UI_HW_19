@@ -41,6 +41,9 @@ html{
     margin-right: auto;
     font-size: 32px;
   }
+  .activeLabel{
+    font-weight: 400;
+  }
   nav{
     display:flex;
     margin: 5vh;
