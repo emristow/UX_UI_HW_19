@@ -1,13 +1,15 @@
+const vl = document.querySelector('.vl');
 const homeLabel = document.querySelector('.navHome');
 const homeSection = document.querySelector('#home');
 
 const sectionOptions = {
-    threshold: .5
+    threshold: .501
 };
 const homeObserver = new IntersectionObserver(function(entries,homeObserver) {
     entries.forEach(entry => {
         if (entry.isIntersecting){
             homeLabel.classList.add("activeLabel");
+            vl.style.height = "90%";
         }
         else {
             homeLabel.classList.remove("activeLabel");
@@ -24,7 +26,8 @@ const aboutSection = document.querySelector('#about');
 const aboutObserver = new IntersectionObserver(function(entries,aboutObserver) {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            aboutLabel.classList.add("activeLabel");
+            aboutLabel.classList.add("activeLabel")
+            vl.style.height = "25%";
         }
         else {
             aboutLabel.classList.remove("activeLabel");
@@ -42,6 +45,7 @@ const workObserver = new IntersectionObserver(function(entries,workObserver) {
     entries.forEach(entry => {
         if (entry.isIntersecting){
             workLabel.classList.add("activeLabel");
+            vl.style.height = "50%";
         }
         else {
             workLabel.classList.remove("activeLabel");
@@ -59,6 +63,7 @@ const contactObserver = new IntersectionObserver(function(entries,contactObserve
     entries.forEach(entry => {
         if (entry.isIntersecting){
             contactLabel.classList.add("activeLabel");
+            vl.style.height = "75%";
         }
         else {
             contactLabel.classList.remove("activeLabel");

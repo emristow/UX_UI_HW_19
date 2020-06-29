@@ -41,18 +41,17 @@ html{
     margin-right: auto;
     font-size: 32px;
   }
-  .activeLabel{
-    font-weight: 400;
-  }
   nav{
     display:flex;
     margin: 5vh;
+    margin-bottom: 5vh;
     height: 60%;
   }
   .vl{
     width: 2px;
     height: 90%;
     background-color: white;
+    transition: ease;
   }
   .navContent{
     padding-left: 24px;
@@ -164,6 +163,9 @@ html{
     .sideBar{
       position: fixed;
     }
+    .activeLabel{
+      font-weight: 400;
+    }
   }
   @media only screen and (max-width: 600px){
     .wrapper{
@@ -190,5 +192,8 @@ html{
     }
     p{
       font-size: 16px;
+    }
+    .activeLabel{
+      display: none;
     }
   }
